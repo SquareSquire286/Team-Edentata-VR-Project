@@ -5,7 +5,7 @@
 - Roxanne Harrison (Design Lead, Frontend Developer)
 - Jacob Sauer (Scrum Master, Lead Developer)
 
-# Github
+# GitHub
 
 Check out our GitHub page ![here](https://github.com/SquareSquire286/Team-Edentata-VR-Project/).
 
