@@ -6,12 +6,13 @@
 - Jacob Sauer (Scrum Master, Lead Developer)
 
 # Documentation
-- [Scrum Notes #1](Documentation/Scrum_Notes_1_9-24.pdf)
 - [Business Case](Documentation/business_case.pdf)
 - [Project Requirements](Documentation/project_requirements.pdf)
 - [Project Charter](Documentation/project_charter.pdf)
 - [MVP 1 Progression](Documentation/environment_progression_sequence.pdf)
 - [Lo-Fi Prototypes](Documentation/lo_fi_prototypes.pdf)
+## Scrum Notes
+- [Scrum Notes #1](Documentation/Scrum_Notes_1_9-24.pdf)
 
 # Vlogs
 
