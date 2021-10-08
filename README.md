@@ -21,7 +21,7 @@
 
 Our team plans to create a series of Virtual Reality (VR) environments, each having an individual focus on a particular phobia people commonly have. These scenarios will provide an interactive user experience to enhance current exposure therapy techniques. By allowing for interactivity in the virtual environment, users will be able to control the linear progression of the scene at their own pace, according to their personal comfort level.  
 See below the planned room layout for the virtual environments:  
-![](Documentation/environment_layout.png
+![](Documentation/environment_layout.png)
 
 # Project Background
 
