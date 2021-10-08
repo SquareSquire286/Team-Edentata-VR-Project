@@ -11,7 +11,7 @@
 - [Project Charter](Documentation/project_charter.pdf)
 - [MVP 1 Progression Sequence Diagram](Documentation/environment_progression_sequence.pdf)
 - [Lo-Fi Prototypes](Documentation/lo_fi_prototypes.pdf)
-- [Environment Layout](Documentation/environment_layout.png)
+- [Environment Layout](Documentation/environment_layout.pdf)
 - [Class Diagram](Documentation/SpiderClassDiagram.PNG)
 
 ## Scrum Notes
