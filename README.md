@@ -6,7 +6,12 @@
 - Jacob Sauer (Scrum Master, Lead Developer)
 
 # Documentation
-- [Scrum Notes #1](Documentation/Scrum_Notes_1_9-24.pdf)
+- [Scrum Notes #1](documentation/Scrum_Notes_1_9-24.pdf)
+- [Business Case](documentation/business_case.pdf)
+- [Project Requirements](documentation/project_requirements.pdf)
+- [Project Charter](documentation/project_charter.pdf)
+- [MVP 1 Progression](documentation/environment_progression_sequence.pdf)
+- [Lo-Fi Prototypes](documentation/lo_fi_prototypes.pdf)
 
 # Vlogs
 
@@ -14,7 +19,9 @@
 
 # Project Idea
 
-Our team plans to create a series of Virtual Reality (VR) environments, each having an individual focus on a particular phobia people commonly have. These scenarios will provide an interactive user experience to enhance current exposure therapy techniques. By allowing for interactivity in the virtual environment, users will be able to control the linear progression of the scene at their own pace, according to their personal comfort level.
+Our team plans to create a series of Virtual Reality (VR) environments, each having an individual focus on a particular phobia people commonly have. These scenarios will provide an interactive user experience to enhance current exposure therapy techniques. By allowing for interactivity in the virtual environment, users will be able to control the linear progression of the scene at their own pace, according to their personal comfort level.  
+See below the planned room layout for the virtual environments:  
+![](documentation/../Documentation/environment_layout.png
 
 # Project Background
 
