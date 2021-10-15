@@ -21,6 +21,7 @@
 # Vlogs
 
 - [Vlog #1](https://www.youtube.com/watch?v=nNTIOCdFI7Q)
+- [Vlog #2](https://youtu.be/dBKsMFWWfEI)
 
 # Project Idea
 
