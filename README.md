@@ -5,17 +5,29 @@
 - Roxanne Harrison (Design Lead, Frontend Developer)
 - Jacob Sauer (Scrum Master, Lead Developer)
 
-# GitHub
+# Documentation
+- [Business Case](Documentation/business_case.pdf)
+- [Project Requirements](Documentation/project_requirements.pdf)
+- [Project Charter](Documentation/project_charter.pdf)
+- [MVP 1 Progression Sequence Diagram](Documentation/environment_progression_sequence.pdf)
+- [Lo-Fi Prototypes](Documentation/lo_fi_prototypes.pdf)
+- [Environment Layout](Documentation/environment_layout.pdf)
+- [Class Diagram](Documentation/SpiderClassDiagram.PNG)
 
-Check out our GitHub page ![here](https://github.com/SquareSquire286/Team-Edentata-VR-Project/).
+## Scrum Notes
+- [Scrum Notes #1](Documentation/Scrum_Notes_1_9-24.pdf)
+- [Scrum Notes #2](Documentation/Scrum_Notes_2_10-8.pdf)
 
 # Vlogs
 
 - [Vlog #1](https://www.youtube.com/watch?v=nNTIOCdFI7Q)
+- [Vlog #2](https://youtu.be/FFGHzaU3o5I)
 
 # Project Idea
 
-Our team plans to create a series of Virtual Reality (VR) environments, each having an individual focus on a particular phobia people commonly have. These scenarios will provide an interactive user experience to enhance current exposure therapy techniques. By allowing for interactivity in the virtual environment, users will be able to control the linear progression of the scene at their own pace, according to their personal comfort level.
+Our team plans to create a series of Virtual Reality (VR) environments, each having an individual focus on a particular phobia people commonly have. These scenarios will provide an interactive user experience to enhance current exposure therapy techniques. By allowing for interactivity in the virtual environment, users will be able to control the linear progression of the scene at their own pace, according to their personal comfort level.  
+See below the planned room layout for the virtual environments:  
+![](Documentation/environment_layout.png)
 
 # Project Background
 
