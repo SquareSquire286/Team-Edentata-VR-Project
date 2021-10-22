@@ -16,15 +16,15 @@
 - [Business Case](Documentation/business_case.pdf)
 - [Project Requirements](Documentation/project_requirements.pdf)
 - [Project Charter](Documentation/project_charter.pdf)
-- [MVP 1 Progression Sequence Diagram](Documentation/VR Environment/environment_progression_sequence.pdf)
+- [MVP 1 Progression Sequence Diagram](Documentation/VR%Environment/environment_progression_sequence.pdf)
 - [Lo-Fi Prototypes](Documentation/lo_fi_prototypes.pdf)
-- [Environment Layout](Documentation/VR Environment/environment_layout.pdf)
+- [Environment Layout](Documentation/VR%Environment/environment_layout.pdf)
 - [Class Diagram](Documentation/SpiderClassDiagram.PNG)
 
 ## Scrum Notes
 - [Scrum Notes #1](Documentation/Scrum%Notes/Scrum_Notes_1_9-24.pdf)
-- [Scrum Notes #2](Documentation/Scrum Notes/Scrum_Notes_2_10-8.pdf)
-- [Scrum Notes #3](Documentation/Scrum Notes/Scrum_Notes_3_10-22.pdf)
+- [Scrum Notes #2](Documentation/Scrum%Notes/Scrum_Notes_2_10-8.pdf)
+- [Scrum Notes #3](Documentation/Scrum%Notes/Scrum_Notes_3_10-22.pdf)
 
 # Vlogs
 
