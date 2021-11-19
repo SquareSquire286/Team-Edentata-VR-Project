@@ -10,5 +10,13 @@ using UnityEngine;
 // ******************************************************************
 public class GameButton : AbstractButton
 {
-    
+    public RoomController roomController;
+
+    public override void OnPress()
+    {
+        transform.position = pressedPosition;
+        affectedObject.ExecuteEvent();
+        roomController.UpdateRoomConditions(this.gameObject);
+        roomController.CheckRoomConditions();
+    }
 }

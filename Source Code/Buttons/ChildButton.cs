@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ChildButton : AbstractButton
 {
     private bool stoppedLastTime;
+    public RoomController roomController;
 
     // Start is called before the first frame update
     public override void Start()
@@ -18,12 +20,14 @@ public class ChildButton : AbstractButton
     {
         transform.localScale = pressedPosition;
 
+        stoppedLastTime = !stoppedLastTime;
+        roomController.UpdateRoomConditions(this.gameObject);
+        roomController.CheckRoomConditions();
+
         if (stoppedLastTime)
             affectedObject.ExecuteEvent();
 
         else affectedObject.StopEvent();
-
-        stoppedLastTime = !stoppedLastTime;
     }
 
     public override void OnRelease()
