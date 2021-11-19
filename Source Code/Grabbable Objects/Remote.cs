@@ -25,11 +25,14 @@ public class Remote : AbstractGrabbable
         previousPosition = transform.position;
         previousRotation = transform.rotation;
 
-        if ((OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) && handGrabbingMe == rightHand) || (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger) && handGrabbingMe == leftHand))
+        if((OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) && handGrabbingMe == rightHand) || (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger) && handGrabbingMe == leftHand))
+        {
             button.OnPress();
-
-        else if ((OVRInput.GetUp(OVRInput.RawButton.RIndexTrigger) && handGrabbingMe == rightHand) || (OVRInput.GetUp(OVRInput.RawButton.LIndexTrigger) && handGrabbingMe == leftHand))
+        }
+        else if((OVRInput.GetUp(OVRInput.RawButton.RIndexTrigger) && handGrabbingMe == rightHand) || (OVRInput.GetUp(OVRInput.RawButton.LIndexTrigger) && handGrabbingMe == leftHand))
+        {
             button.OnRelease();
+        }
     }
 
     public override void WhenReleased()

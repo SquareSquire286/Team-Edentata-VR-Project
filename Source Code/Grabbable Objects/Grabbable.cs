@@ -9,27 +9,22 @@ using UnityEngine;
 //          objects that would be given a Grabbable script include pieces 
 //          of paper, inanimate spider toys, and other trinkets in the rooms' 
 //          desks or dresser drawers.
-//
-// Class Variables: 
-//                   rigidBody ->
-//                   previousPosition ->
-//                   previousRotation ->
 // *************************************************************************
 public class Grabbable : AbstractGrabbable
 {
-    private Rigidbody rigidbody;
-    private Vector3 previousPosition;
-    private Quaternion previousRotation;
+    protected Rigidbody rigidbody;
+    protected Vector3 previousPosition;
+    protected Quaternion previousRotation;
 
     
-    // *************************************************************
+    // ******************************************************************
     // Functionality: Start is called before the first frame update.
     //                Sets the isGrabbed variable to false by default and
     //                instantiates the rigidibody component.
     //                                                              
     // Parameters: none                                             
     // Return: none                                                 
-    // *************************************************************
+    // ******************************************************************
     public override void Start()
     {
         isGrabbed = false;
@@ -38,7 +33,9 @@ public class Grabbable : AbstractGrabbable
 
 
     // ********************************************
-    // Functionality: 
+    // Functionality: Object is picked up by user, 
+    //                and object is rotated to fit
+    //                user hand.
     //
     // Parameters: none
     // Return: none
@@ -68,7 +65,6 @@ public class Grabbable : AbstractGrabbable
 
         Vector3 velocity = (transform.position - previousPosition) / Time.deltaTime;
         Vector3 angularVelocity = (transform.rotation.eulerAngles - previousRotation.eulerAngles) / Time.deltaTime;
-        Debug.Log(velocity);
 
         rigidbody.drag = 0; 
         rigidbody.velocity = velocity;
