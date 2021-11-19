@@ -25,6 +25,7 @@
 - [Scrum Notes #1](Documentation/Scrum_Notes/Scrum_Notes_1_9-24.pdf)
 - [Scrum Notes #2](Documentation/Scrum_Notes/Scrum_Notes_2_10-8.pdf)
 - [Scrum Notes #3](Documentation/Scrum_Notes/Scrum_Notes_3_10-22.pdf)
+- [Scrum Notes #4](Documentation/Scrum_Notes/Scrum_Notes_4_11-19.pdf)
 
 # Vlogs
 
