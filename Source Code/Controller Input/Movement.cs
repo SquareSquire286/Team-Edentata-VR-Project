@@ -22,7 +22,9 @@ public class Movement : MonoBehaviour
         camera.GetComponent<Rigidbody>().position += (transform.right * joystick.x + transform.forward * joystick.y) * speed * Time.deltaTime;
         camera.GetComponent<Rigidbody>().position = new Vector3(camera.GetComponent<Rigidbody>().position.x, fixedY, camera.GetComponent<Rigidbody>().position.z);
 
-        if (joystick.x == 0 && joystick.y == 0)
+        if(joystick.x == 0 && joystick.y == 0)
+        {
             camera.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+        }
     }
 }

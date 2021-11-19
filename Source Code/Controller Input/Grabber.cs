@@ -3,15 +3,29 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
+// **************************************************************
+// Purpose: This class implements the hand functions for the Oculus 
+//          Quest. Its main functions allow the user to pick up 
+//          objects and let them go. 
+//***************************************************************
 public class Grabber : MonoBehaviour
 {
     private List<GameObject> currentCollisions, buttons;
-    public string handString; // needs to be either "Left" or "Right"
+    public string handString; 
     private string leftHandString, rightHandString;
     private GameObject grabbedObject, pressedButton;
     private bool grabbed;
+    private float timeLastPressed;
 
-    // Start is called before the first frame update
+    // ****************************************************************************
+    // Functionality: Start is called before the first frame update. Instantiates
+    //                both hand possibilities, as well as any objects that can be 
+    //                grabbed or pushed/pulled.
+    // 
+    //
+    // Parameters: none
+    // Return: none
+    // *****************************************************************************
     void Start()
     {
         grabbed = false; 
@@ -20,86 +34,128 @@ public class Grabber : MonoBehaviour
         buttons = new List<GameObject>();
         leftHandString = "Left";
         rightHandString = "Right";
+        timeLastPressed = -200f; // sentinel value
     }
 
-    // Update is called once per frame
+
+    // ****************************************************************************
+    // Functionality: First checks what hand is grabbing the object, then calls the
+    //                set grab status for that object. It then checks if the object 
+    //                is being released and to detach itself from the user.
+    // 
+    //
+    // Parameters: none
+    // Return: none
+    // *****************************************************************************
     void Update()
     { 
-        // if we find that the button has been let go on that frame, we set grabbed to false.
-        if ((OVRInput.GetUp(OVRInput.RawButton.RHandTrigger) && handString == rightHandString) || (OVRInput.GetUp(OVRInput.RawButton.LHandTrigger) && handString == leftHandString))
+        
+        if((OVRInput.GetUp(OVRInput.RawButton.RHandTrigger) && handString == rightHandString) || (OVRInput.GetUp(OVRInput.RawButton.LHandTrigger) && handString == leftHandString))
         {
-            grabbed = false; // no object is being grabbed right now
+            grabbed = false; 
             
-            if (grabbedObject != null)
-                grabbedObject.GetComponent<AbstractGrabbable>().SetGrabStatus(false, null); // calls set grab status. calls the when released function. calculates exit velocity.
+            if(grabbedObject != null)
+            {
+                grabbedObject.GetComponent<AbstractGrabbable>().SetGrabStatus(false, null);
+            }
 
             grabbedObject = null; 
         }
         
-        if ((OVRInput.GetUp(OVRInput.RawButton.RIndexTrigger) && handString == rightHandString) || (OVRInput.GetUp(OVRInput.RawButton.LIndexTrigger) && handString == leftHandString))
+        if((OVRInput.GetUp(OVRInput.RawButton.RIndexTrigger) && handString == rightHandString) || (OVRInput.GetUp(OVRInput.RawButton.LIndexTrigger) && handString == leftHandString))
         {
-            if (pressedButton != null)
+            if(pressedButton != null)
+            {
                 pressedButton.GetComponent<AbstractButton>().OnRelease();
+            }
 
             pressedButton = null;
         }
     }
 
-    // default function by Unity. Called on the very first frame that a collider contacts another collider.
-    // only reason why grabbing objects works
+
+    // ****************************************************************************
+    // Functionality: Called on the very first frame that a collider contacts 
+    //                another collider. Checks the gameObject (hand, button, etc) 
+    //                for a specific script attached, and if it does it will add its
+    //                collider to a list of colliders.
+    //                
+    //                
+    // Parameters: none
+    // Return: none
+    // *****************************************************************************
     void OnTriggerEnter(Collider col)
     {
-        // check if gameObject that is being grabbed has a AbstractGrabbable script attached
         if (col.gameObject.GetComponent<AbstractGrabbable>() != null)
         {
             currentCollisions.Add(col.gameObject); 
         }
-        // check if the gameObject that is being grabbed has a AbstractButton script attached. Has a different input altogether
-        else if (col.gameObject.GetComponent<AbstractButton>() != null)
+        else if(col.gameObject.GetComponent<AbstractButton>() != null)
         {
             buttons.Add(col.gameObject);
         }   
     }
 
-    // another default function by Unity. When the collider stays in contact with the trigger collider. much better than update. Worst case O(n), best case O(1)
+
+    // ****************************************************************************
+    // Functionality: When the collider stays in contact with the trigger collider. 
+    //                Is much better than update(). Worst case O(n), best case O(1).
+    //                First checks if user is holding the trigger on a controller, 
+    //                then looks for an object already being grabbed. If no object
+    //                is being held, then it will make sure that the hand not 
+    //                grabbing anything cant steal the object trying to be grabbed. 
+    //              
+    //                The last condition checks the index of the trigger, which only 
+    //                cares about the first frame that it is pressed. 
+    //                
+    //                
+    // Parameters: none
+    // Return: none
+    // *****************************************************************************
     void OnTriggerStay(Collider col)
     {
-        // Get() returns true if a button is held down. GetDown() returns true on the first frame a button is pressed. GetUp() returns true on the first frame a button is released.
-        if ((OVRInput.Get(OVRInput.RawButton.RHandTrigger) && handString == rightHandString) || (OVRInput.Get(OVRInput.RawButton.LHandTrigger) && handString == leftHandString))
+        if((OVRInput.Get(OVRInput.RawButton.RHandTrigger) && handString == rightHandString) || (OVRInput.Get(OVRInput.RawButton.LHandTrigger) && handString == leftHandString))
         {
-            // check if hand is already grabbing an object. check if there is more than 1 current collision, in the list of collision.
-            if (!grabbed && grabbedObject == null && currentCollisions.Count > 0)
+            if(!grabbed && grabbedObject == null && currentCollisions.Count > 0)
             {
-                // if the last element in the currentCollision list is not being grabbed. prevents the left hand from stealing whats in the right hand, and vice versa.
-                if (!currentCollisions.ElementAt(currentCollisions.Count - 1).GetComponent<AbstractGrabbable>().GetGrabStatus())
+                if(!currentCollisions.ElementAt(currentCollisions.Count - 1).GetComponent<AbstractGrabbable>().GetGrabStatus())
                 {
-                    grabbedObject = currentCollisions.ElementAt(currentCollisions.Count - 1); // the hand will grab the most recent grabbable object that it collided with
+                    grabbedObject = currentCollisions.ElementAt(currentCollisions.Count - 1); 
                     grabbed = true;
                     grabbedObject.GetComponent<AbstractGrabbable>().SetGrabStatus(true, this.gameObject);
                 }
             }
         }
 
-        // check for the index trigger, not the hand trigger. We only care about the first frame that is pressed -> getDown()
         if ((OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) && handString == rightHandString) || (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger) && handString == leftHandString))
         {
-            if (buttons.Count > 0)
+            if (buttons.Count > 0 && (Time.time - timeLastPressed >= 0.6f))
             {
                 pressedButton = buttons.ElementAt(buttons.Count - 1);
                 pressedButton.GetComponent<AbstractButton>().OnPress();
+                timeLastPressed = Time.time;
             }
         }
     }
 
-    // defualt in unity
-    // check and see if previously triggered collider is exited. on the frame unity registers that there isnt anything being collided.
+
+    // ****************************************************************************
+    // Functionality: Checks if previously triggered collider is exited. 
+    //                Is called on the frame Unity registers that there isn't anything 
+    //                being collided.
+    //                
+    //                
+    // Parameters: none
+    // Return: none
+    // *****************************************************************************
     void OnTriggerExit(Collider col)
     {
-        if (col.gameObject.GetComponent<AbstractGrabbable>() != null)
+        if(col.gameObject.GetComponent<AbstractGrabbable>() != null)
         {
-            currentCollisions.Remove(col.gameObject); // remove the collision from the list of collisions
+            currentCollisions.Remove(col.gameObject); 
         }
-        else if (col.gameObject.GetComponent<AbstractButton>() != null)
+
+        else if(col.gameObject.GetComponent<AbstractButton>() != null)
         {
             buttons.Remove(col.gameObject);
         }
