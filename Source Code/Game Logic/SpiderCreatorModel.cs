@@ -67,7 +67,7 @@ public class SpiderCreatorModel : MonoBehaviour
 
     public int GetRemainingSpiders()
     {
-        return SpiderCreatorSingleton.maxSpiders - activeSpiders.Count;
+        return userDeterminedMax - activeSpiders.Count;
     }
 
     public void CreateSpider() // EXTREMELY UNCLEAN, NEED TO REFACTOR AT SOME POINT IN WINTER 2022
