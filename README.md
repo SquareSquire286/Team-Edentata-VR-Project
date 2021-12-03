@@ -31,6 +31,7 @@
 
 - [Vlog #1](https://www.youtube.com/watch?v=nNTIOCdFI7Q)
 - [Vlog #2](https://youtu.be/FFGHzaU3o5I)
+- [Vlog #3](https://youtu.be/Z-OLgdAkyOI)
 
 # Project Idea
 
