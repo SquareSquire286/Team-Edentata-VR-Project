@@ -1,1 +1,6 @@
-Any and all pertinent documentation for this project.
+# Team Edentata VR Capstone Project
+## Project Deliverables
+
+### Project Initialization and Planning
+
+### Project Execution and Closing
