@@ -2,7 +2,8 @@
 ## Project Deliverables
 
 ### Project Initialization and Planning
-- [ ] Business case and project charter (or similar)
+- [ ] [Business case](Documentation/business_case.pdf)
+- [ ] [Project charter](Documentation/project_charter.pdf) 
 - [ ] Problem & requirements prerequisites
 - [ ] System / architectural design pictures
 - [ ] Prototypes / wireframes (lo/hi-fidelity)
