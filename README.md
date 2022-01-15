@@ -5,39 +5,12 @@
 - Roxanne Harrison (Design Lead, Frontend Developer)
 - Jacob Sauer (Scrum Master, Lead Developer)
 
-# Source Code
-- [Buttons](Source%20Code/Buttons)
-- [Button Events](Source%20Code/Button%20Events)
-- [Controller Input](Source%20Code/Controller%20Input)
-- [Grabbable Objects](Source%20Code/Grabbable%20Objects)
-- [Spiders](Source%20Code/Spiders)
-
 # Documentation
-- [Business Case](Documentation/business_case.pdf)
-- [Project Requirements](Documentation/project_requirements.pdf)
-- [Project Charter](Documentation/project_charter.pdf)
-- [MVP 1 Progression Sequence Diagram](Documentation/VR_Environment/environment_progression_sequence.pdf)
-- [Lo-Fi Prototypes](Documentation/lo_fi_prototypes.pdf)
-- [Environment Layout](Documentation/VR_Environment/environment_layout.pdf)
-- [Class Diagram](Documentation/SpiderClassDiagram.PNG)
-
-## Scrum Notes
-- [Scrum Notes #1](Documentation/Scrum_Notes/Scrum_Notes_1_9-24.pdf)
-- [Scrum Notes #2](Documentation/Scrum_Notes/Scrum_Notes_2_10-8.pdf)
-- [Scrum Notes #3](Documentation/Scrum_Notes/Scrum_Notes_3_10-22.pdf)
-- [Scrum Notes #4](Documentation/Scrum_Notes/Scrum_Notes_4_11-19.pdf)
-
-# Vlogs
-
-- [Vlog #1](https://www.youtube.com/watch?v=nNTIOCdFI7Q)
-- [Vlog #2](https://youtu.be/FFGHzaU3o5I)
-- [Vlog #3](https://youtu.be/Z-OLgdAkyOI)
+All document, vlog, and project related links can be found in the [Documentation](Documentation/) section. 
 
 # Project Idea
 
 Our team plans to create a series of Virtual Reality (VR) environments, each having an individual focus on a particular phobia people commonly have. These scenarios will provide an interactive user experience to enhance current exposure therapy techniques. By allowing for interactivity in the virtual environment, users will be able to control the linear progression of the scene at their own pace, according to their personal comfort level.  
-See below the planned room layout for the virtual environments:  
-![](Documentation/environment_layout.png)
 
 # Project Background
 
@@ -55,13 +28,3 @@ We see an opportunity to improve upon past VR experiences used for exposure ther
 
 - Craig Gelowitz
 - Tim Maciag
-
-# Further Readings
-
-- ![A Meta-Analysis of the Immersion-Presence Relationship in Virtual Reality Experiences](Documentation/A_meta-analysis_of_the_immersion-presence_relationship_in_virtual_reality_experiences_IJVAR.pdf)
-- ![The Use of Virtual Reality Technology in the Treatment of Anxiety and Other Psychiatric Disorders](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5421394/)
-- ![Changes in Brain Activation through Cognitive-Behavioral Therapy with Exposure to Virtual Reality: A Neuroimaging Study of Specific Phobia](https://pubmed.ncbi.nlm.nih.gov/34441804/)
-- ![Virtual Reality Exposure Therapy for Fear of Heights: Clinicians’ Attitudes Become More Positive After Trying VRET](https://www.frontiersin.org/articles/10.3389/fpsyg.2021.671871/full)
-- ![The Efficacy of a Virtual Reality Exposure Therapy Treatment for Fear of Flying: A Retrospective Study](https://www.frontiersin.org/articles/10.3389/fpsyg.2021.641393/full)
-- ![The Use of Virtual Reality in Assessment and Treatment of Anxiety and Related Disorders](https://onlinelibrary.wiley.com/doi/10.1002/cpp.2623)
-- ![Meta-Analysis of Virtual Reality Exposure Therapy for Social Anxiety Disorder](https://www.cambridge.org/core/journals/psychological-medicine/article/metaanalysis-of-virtual-reality-exposure-therapy-for-social-anxiety-disorder/F31E7D26EF8C24671E3097B98FD3996F)
