@@ -4,7 +4,7 @@
 - [ ] [Business case](./business_case.pdf)
 - [ ] [Project charter](./project_charter.pdf) 
 - [ ] [Problem & requirements prerequisites](./project_requirements.pdf)
-- [ ] System / architectural design pictures
+- [ ] System / architectural design pictures  
   [Class Diagram](./ClassDiagram.pdf)  
   [Environment Layout](./environment_layout.pdf)  
   [Progression Sequence](./environment_progression_sequence.pdf)  
