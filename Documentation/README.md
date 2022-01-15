@@ -5,9 +5,9 @@
 - [ ] [Project charter](./project_charter.pdf) 
 - [ ] [Problem & requirements prerequisites](./project_requirements.pdf)
 - [ ] System / architectural design pictures
-  [Class Diagram](./ClassDiagram.pdf)
-  [Environment Layout](./environment_layout.pdf)
-  [Progression Sequence](./environment_progression_sequence.pdf)
+  [Class Diagram](./ClassDiagram.pdf)  
+  [Environment Layout](./environment_layout.pdf)  
+  [Progression Sequence](./environment_progression_sequence.pdf)  
 - [X] [Prototypes / wireframes (lo/hi-fidelity)](./lo_fi_prototypes.pdf)
 - [ ] Role / attribute based access control (R/ABAC) vision
 - [X] [Project roadmaps (ENSE 400 Kanban)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/1)
