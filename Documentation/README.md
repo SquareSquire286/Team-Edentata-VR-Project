@@ -20,11 +20,11 @@
 - [ ] [Project roadmaps (ENSE 477 Kanban)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/3)
 - [ ] [Project roadmaps (USM)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/2)
 - [ ] Project source code   
-  [Buttons](../Source%20Code/Buttons)
-  [Button Events](../Source%20Code/Button%20Events)
-  [Controller Input](../Source%20Code/Controller%20Input)
-  [Grabbable Objects](../Source%20Code/Grabbable%20Objects)
-  [Spiders](Source%20Code/Spiders)
+  [Buttons](../Source%20Code/Buttons)  
+  [Button Events](../Source%20Code/Button%20Events)  
+  [Controller Input](../Source%20Code/Controller%20Input)  
+  [Grabbable Objects](../Source%20Code/Grabbable%20Objects)  
+  [Spiders](Source%20Code/Spiders)   
 - [ ] Code testing plan / results
 - [ ] User testing plan / results
 - [ ] Code quality review report
