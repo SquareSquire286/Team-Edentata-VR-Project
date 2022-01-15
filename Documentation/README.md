@@ -4,7 +4,7 @@
 ### Project Initialization and Planning
 - [ ] [Business case](./business_case.pdf)
 - [ ] [Project charter](./project_charter.pdf) 
-- [ ] [Problem & requirements prerequisites](./project_requirements.pdf))
+- [ ] [Problem & requirements prerequisites](./project_requirements.pdf)
 - [ ] [System / architectural design pictures](./ClassDiagram.pdf)
 - [ ] [Prototypes / wireframes (lo/hi-fidelity)](./lo_fi_prototypes.pdf)
 - [ ] Role / attribute based access control (R/ABAC) vision
