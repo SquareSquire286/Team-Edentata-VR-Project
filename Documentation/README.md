@@ -8,14 +8,16 @@
 - [ ] [System / architectural design pictures](./ClassDiagram.pdf)
 - [ ] [Prototypes / wireframes (lo/hi-fidelity)](./lo_fi_prototypes.pdf)
 - [ ] Role / attribute based access control (R/ABAC) vision
-- [ ] Project roadmaps (Kanban, USM, Gantt, etc.)
+- [ ] [Project roadmaps (Kanban)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/1)
+- [ ] [Project roadmaps (USM)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/2)
 - [ ] Video blogs (vlogs) and demo(s)
-- [ ] Updated Github
-- [ ] Professionalism (inc. attendance)
+  [Vlog #1](https://www.youtube.com/watch?v=nNTIOCdFI7Q)  
+  [Vlog #2](https://youtu.be/FFGHzaU3o5I)  
+  [Vlog #3](https://youtu.be/Z-OLgdAkyOI)  
+
 
 ### Project Execution and Closing
 - [ ] (Continually) Updated project roadmaps
-- [ ] (Continually) Updated Github (highly readable on project delivery)
 - [ ] Project source code
 - [ ] Code testing plan / results
 - [ ] User testing plan / results
@@ -26,4 +28,3 @@
 - [ ] Customer help / user training / knowledgebase
 - [ ] Final presentation and demo
 - [ ] Project experience report
-- [ ] Professionalism (inc. attendance)
