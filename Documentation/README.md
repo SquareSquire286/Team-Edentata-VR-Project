@@ -1,15 +1,15 @@
 # Project Deliverables
 
 ## Project Initialization and Planning
-- [ ] [Business case](./business_case.pdf)
-- [ ] [Project charter](./project_charter.pdf) 
-- [ ] [Problem & requirements prerequisites](./project_requirements.pdf)
-- [ ] System / architectural design pictures  
+- [X] [Business case](./business_case.pdf)
+- [X] [Project charter](./project_charter.pdf) 
+- [X] [Problem & requirements prerequisites](./project_requirements.pdf)
+- [X] System / architectural design pictures  
   [Class Diagram](./ClassDiagram.pdf)  
   [Environment Layout](./environment_layout.pdf)  
   [Progression Sequence](./environment_progression_sequence.pdf)  
 - [X] [Prototypes / wireframes (lo/hi-fidelity)](./lo_fi_prototypes.pdf)
-- [ ] Role / attribute based access control (R/ABAC) vision
+- [X] [Role / attribute based access control (R/ABAC) vision](./raci_chart.pdf)
 - [X] [Project roadmaps (ENSE 400 Kanban)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/1)
 - [X] [Project roadmaps (USM)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/2)
 - [X] Video blogs (vlogs) and demo(s)  
@@ -19,9 +19,9 @@
 
 
 ## Project Execution and Closing
-- [ ] [Project roadmaps (ENSE 477 Kanban)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/3)
-- [ ] [Project roadmaps (USM)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/2)
-- [ ] Project source code   
+- [X] [Project roadmaps (ENSE 477 Kanban)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/3)
+- [X] [Project roadmaps (USM)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/2)
+- [X] Project source code   
   [Buttons](../Source%20Code/Buttons)  
   [Button Events](../Source%20Code/Button%20Events)  
   [Controller Input](../Source%20Code/Controller%20Input)  
