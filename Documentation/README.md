@@ -43,7 +43,7 @@
 - [Scrum Notes #2](Scrum_Notes/Scrum_Notes_2_10-8.pdf)
 - [Scrum Notes #3](Scrum_Notes/Scrum_Notes_3_10-22.pdf)
 - [Scrum Notes #4](Scrum_Notes/Scrum_Notes_4_11-19.pdf)
-- [Bazaar Day #1](Scrum_Notes/Project_Bazaar_Day1_1-24.pdf)
+- [Bazaar Day #1](Scrum_Notes/Project_Bazaar_Day1_1-25.pdf)
 ### Further Readings
 - [A Meta-Analysis of the Immersion-Presence Relationship in Virtual Reality Experiences](./Further_Readings/A_meta-analysis_of_the_immersion-presence_relationship_in_virtual_reality_experiences_IJVAR.pdf)
 - [The Use of Virtual Reality Technology in the Treatment of Anxiety and Other Psychiatric Disorders](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5421394/)
