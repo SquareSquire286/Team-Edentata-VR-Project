@@ -1,5 +1,5 @@
 # ArachnoTherapy VR
-## Team Edentata VR Capstone Project
+## Team Edentata - ENSE 477 Capstone Project
 
 # Members
 - Jacob Chapman (Business Lead, Backend Developer)
