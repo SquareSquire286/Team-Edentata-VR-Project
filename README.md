@@ -1,4 +1,5 @@
-# Team Edentata VR Capstone Project
+# ArachnoTherapy VR
+## Team Edentata VR Capstone Project
 
 # Members
 - Jacob Chapman (Business Lead, Backend Developer)
@@ -10,7 +11,7 @@ All document, vlog, and project related links can be found in the [Documentation
 
 # Project Idea
 
-Our team plans to create a series of Virtual Reality (VR) environments, each having an individual focus on a particular phobia people commonly have. These scenarios will provide an interactive user experience to enhance current exposure therapy techniques. By allowing for interactivity in the virtual environment, users will be able to control the linear progression of the scene at their own pace, according to their personal comfort level.  
+Current exposure therapy techniques, especially for arachnophobia pose danger with unpredictability of spider behaviour. Virtual reality exposure therapy is one step safer, however interactions the user has are often only passive. These things, coupled with the increasing demand and shortage of therapists available make exposure therapy less accessible than necessary. ArachnoTherapy VR is an application created to improve accessibility and efficacy of current exposure therapy techniques by allowing for level-based progression and optional guidance from a virtual therapist.
 
 # Project Background
 
