@@ -31,7 +31,8 @@
 - [ ] User testing plan / results
 - [ ] Code quality review report
 - [ ] Project poster
-- [ ] Video blogs (vlogs) and demo(s)
+- [X] Video blogs (vlogs) and demo(s)
+  [Vlog #4](https://youtu.be/ifcloafs_rU)
 - [ ] Project commercial
 - [ ] Customer help / user training / knowledgebase
 - [ ] Final presentation and demo
