@@ -44,6 +44,7 @@
 - [Scrum Notes #2](Scrum_Notes/Scrum_Notes_2_10-8.pdf)
 - [Scrum Notes #3](Scrum_Notes/Scrum_Notes_3_10-22.pdf)
 - [Scrum Notes #4](Scrum_Notes/Scrum_Notes_4_11-19.pdf)
+- [Scrum Notes #5](crum_Notes/Scrum_Notes_5_2-8.pdf)
 - [Bazaar Day #1](Scrum_Notes/Project_Bazaar_Day1_1-25.pdf)
 ### Further Readings
 - [A Meta-Analysis of the Immersion-Presence Relationship in Virtual Reality Experiences](./Further_Readings/A_meta-analysis_of_the_immersion-presence_relationship_in_virtual_reality_experiences_IJVAR.pdf)
