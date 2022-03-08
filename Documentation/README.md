@@ -32,7 +32,7 @@
 - [ ] Code quality review report
 - [ ] Project poster
 - [X] Video blogs (vlogs) and demo(s)  
-  [Vlog #4](https://youtu.be/ifcloafs_rU)
+  [Vlog #4](https://youtu.be/ifcloafs_rU)  
   [Vlog #5](https://youtu.be/l-9Ft43D0aw)
 - [ ] Project commercial
 - [ ] Customer help / user training / knowledgebase
