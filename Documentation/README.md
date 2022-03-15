@@ -47,6 +47,7 @@
 - [Scrum Notes #4](Scrum_Notes/Scrum_Notes_4_11-19.pdf)
 - [Scrum Notes #5](Scrum_Notes/Scrum_Notes_5_2-8.pdf)
 - [Scrum Notes #6](Scrum_Notes/Scrum_Notes_6_2-14.pdf)
+- [Scrum Notes #7](Scrum_Notes/Scrum_Notes_7_3-15.pdf)
 - [Bazaar Day #1](Scrum_Notes/Project_Bazaar_Day1_1-25.pdf)
 - [Bazaar Day #2](Scrum_Notes/Project_Bazaar_Day2_3-1.pdf)
 ### Further Readings
