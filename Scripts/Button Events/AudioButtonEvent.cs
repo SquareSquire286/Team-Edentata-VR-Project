@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // **************************************************************
-// Purpose: Instantiates audio component and plays 
-//          selected clip on audio sourceobject
+// Purpose: Goes on object with audio source component. 
+//          Plays audio when user interacts with button that triggers this event
 //
 // Class Variables: 
-//                   audioSource -> the audio source game object
+//          audioSource -> the audio source game object
+//          hasToggleableAudio -> Facilitates random audio selection before playing if necessary
+//          soundBites -> array of audio clips. Only populated if hasToggleableAudio is True
 //
 //***************************************************************
 public class AudioButtonEvent : AbstractButtonEvent
 {
     private AudioSource audioSource;
-    public bool hasToggleableAudio;
+    public bool hasToggleableAudio; // Used in Room 3, for education content
     public AudioClip[] soundBites;
+
 
     // ****************************************************************************
     // Functionality: Start is called before the first frame update. Ensures 
@@ -29,8 +32,10 @@ public class AudioButtonEvent : AbstractButtonEvent
     }
 
 
+
     // ********************************************************************
-    // Functionality: Gets called by button. Plays the selected audio clip.
+    // Functionality: Gets called on button press. Checks state of hasToggleableAudio 
+    //                to see if it needs to select a new clip, then plays it.
     //
     // Parameters: none
     // Return: none
@@ -43,7 +48,14 @@ public class AudioButtonEvent : AbstractButtonEvent
         else audioSource.Play();
     }
 
-    // Handles the cases where the audio source can play one of many different clips (i.e. the spider information speakers in Room 3)
+
+    // ******************************************************************** 
+    // Functionality: Handles the cases where the audio source can play one of 
+    //                many different clips (i.e. the spider information speakers in Room 3)
+    //
+    // Parameters: none
+    // Return: none
+    // ********************************************************************
     private void SwitchClip_ThenPlay()
     {
         if (audioSource.isPlaying) // Prevent NullReferenceExceptions by stopping playback before replacing the AudioClip

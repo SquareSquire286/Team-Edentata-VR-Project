@@ -15,7 +15,7 @@ public abstract class AbstractButtonEvent : MonoBehaviour
 
 
     // *********************************************************
-    // Functionality: Called once at the beginning of the event
+    // Functionality: Called on the very first frame the project is launched 
     //
     // Parameters: none
     // Return: none
@@ -39,7 +39,7 @@ public abstract class AbstractButtonEvent : MonoBehaviour
 
 
     // **********************************************
-    // Functionality: Defined in concrete subclasses
+    // Functionality: Defined in concrete subclasses called once at the beginning of the event
     //
     // Parameters: none
     // Return: none
@@ -48,7 +48,14 @@ public abstract class AbstractButtonEvent : MonoBehaviour
     {
     
     }
+    
 
+    // **********************************************
+    // Functionality: Called under certain conditions on the frame the event ends
+    //
+    // Parameters: none
+    // Return: none
+    // **********************************************
     public virtual void StopEvent()
     {
 

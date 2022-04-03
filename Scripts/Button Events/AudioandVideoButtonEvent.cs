@@ -3,6 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 
+// *************************************************************************************
+// Purpose: This event is called when the play button on the diaphragmatic breathing screen in room 0 is pressed.
+//          Since the audio and video sources are seperate objects with different logic, an additional subclass of abstract button event is required.
+//
+// Class Variables: 
+//          transitionButton -> the button the user presses to unlock room 1. Visibility is controlled by the execution of this event
+//          buttonActivationDelayTime -> the amount of time that passes between this event being invoked and the transition button becoming visible. 
+//                                       Appears hardcoded in the script, but is public and can actually be changed in the inspector window 
+//          videoPlayer -> Instance of class from UnityEngine.Video that plays the tutorial clip on button press.
+//          audioSource -> the audio source game object
+//          audioHasPlayed -> "Exception Handler" for subsequent button presses; Ensures the audio only plays once
+//                
+//          
+// *************************************************************************************
 public class AudioandVideoButtonEvent : AbstractButtonEvent
 {
     public GameObject transitionButton;
@@ -11,7 +25,13 @@ public class AudioandVideoButtonEvent : AbstractButtonEvent
     private AudioSource audioSource;
     private bool audioHasPlayed;
 
-    // Start is called before the first frame update
+    
+    // ********************************************************************
+    // Functionality: Start is called before the first frame update
+    //
+    // Parameters: none
+    // Return: none
+    // ********************************************************************
     public override void Start()
     {
         transitionButton.SetActive(false);
@@ -19,6 +39,8 @@ public class AudioandVideoButtonEvent : AbstractButtonEvent
         audioSource = GetComponent<AudioSource>();
         videoPlayer = GetComponent<VideoPlayer>();
     }
+
+
 
     public override void ExecuteEvent()
     {
