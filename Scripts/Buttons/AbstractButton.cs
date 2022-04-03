@@ -2,9 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// *****************************************************************************************
+// *************************************************************************************
 // Purpose: Interface for any button that can be pressed / held with the controller Triggers
-// *****************************************************************************************
+//
+// Class Variables: 
+//          initialMaterial ->
+//          isPressed ->
+//          releasedPosition ->
+//          pressedPosition ->
+//          affectedObject ->
+//                
+//          
+// *************************************************************************************
 public abstract class AbstractButton : MonoBehaviour
 {
     public Material initialMaterial;
@@ -27,25 +36,25 @@ public abstract class AbstractButton : MonoBehaviour
     }
 
 
-    // **********************************************
+    // ****************************************************************************
     // Functionality: Update is called once per frame   
     //                                                          
     // Parameters: none
     // return: none                            
-    // **********************************************
+    // ****************************************************************************
     public virtual void Update()
     {
       
     }
 
 
-    // **************************************************
+    // ****************************************************************************
     // Functionality: presses the button if true,                 
-    //                otherwise releases the button.              
-    //                                                            
-    // Parameters: newStatus -> true if button is pressed         
-    // return: current state of button                            
-    // **************************************************
+    //                otherwise releases the button.  
+    // 
+    // Parameters: newStatus -> true if button is pressed 
+    // Return: current state of button
+    // ****************************************************************************
     public virtual void SetPressStatus(bool newStatus)
     {
         isPressed = newStatus;
@@ -62,12 +71,12 @@ public abstract class AbstractButton : MonoBehaviour
     }
 
 
-    //***********************************
+    // ****************************************************************************
     // Functionality: Button is pressed
-    //
+    // 
     // Parameters: none
-    // return: none         
-    //***********************************
+    // Return: none
+    // ****************************************************************************
     public virtual void OnPress()
     {
         transform.position = pressedPosition;
@@ -75,17 +84,25 @@ public abstract class AbstractButton : MonoBehaviour
     }
 
 
-    // ***********************************
+    // ****************************************************************************
     // Functionality: Button is released
-    //
+    // 
     // Parameters: none
-    // return: none
-    // ***********************************      
+    // Return: none
+    // ****************************************************************************
     public virtual void OnRelease()
     {
         transform.position = releasedPosition;
     }
 
+
+
+    // ****************************************************************************
+    // Functionality: Button is released
+    // 
+    // Parameters: none
+    // Return: none
+    // ****************************************************************************
     public virtual void ApplyHighlight(Material highlightMaterial)
     {
         if (GetComponent<Renderer>() == null)
@@ -94,6 +111,13 @@ public abstract class AbstractButton : MonoBehaviour
         else GetComponent<Renderer>().material = highlightMaterial;
     }
 
+
+    // ****************************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // Return: none
+    // ****************************************************************************
     public virtual void RemoveHighlight()
     {
         if (GetComponent<Renderer>() == null)

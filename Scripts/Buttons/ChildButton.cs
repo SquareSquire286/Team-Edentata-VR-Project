@@ -2,12 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+// *************************************************************************************
+// Purpose: 
+//
+// Class Variables: 
+//          stoppedLastTime ->
+//          roomController ->
+//                
+//          
+// *************************************************************************************
 public class ChildButton : AbstractButton
 {
     private bool stoppedLastTime;
     public RoomController roomController;
 
+
+    
     // Start is called before the first frame update
     public override void Start()
     {
