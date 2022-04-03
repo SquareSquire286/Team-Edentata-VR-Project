@@ -25,7 +25,7 @@ public class AudioandVideoButtonEvent : AbstractButtonEvent
     private AudioSource audioSource;
     private bool audioHasPlayed;
 
-    
+
     // ********************************************************************
     // Functionality: Start is called before the first frame update
     //
@@ -41,7 +41,13 @@ public class AudioandVideoButtonEvent : AbstractButtonEvent
     }
 
 
-
+    
+    // ****************************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // Return: none
+    // *****************************************************************************
     public override void ExecuteEvent()
     {
         if (videoPlayer.isPlaying)
@@ -60,6 +66,13 @@ public class AudioandVideoButtonEvent : AbstractButtonEvent
         }
     }
 
+
+    // ****************************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // Return: none
+    // *****************************************************************************
     private void ActivateTransitionButton()
     {
         transitionButton.SetActive(true);
