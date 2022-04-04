@@ -98,7 +98,12 @@ public abstract class AbstractButton : MonoBehaviour
 
 
     // ****************************************************************************
-    // Functionality: Button is released
+    // Functionality: Temporary applies the highlight material to the button object
+    //                when either of the Oculus controllers is hovering over it.
+    //                For some objects, the visible button model is a child object
+    //                of an invisible "grab box" that handles collisions, so the
+    //                function needs to check if the object handling collisions has
+    //                a Renderer component before it attempts to apply the material.
     // 
     // Parameters: none
     // Return: none
@@ -113,7 +118,13 @@ public abstract class AbstractButton : MonoBehaviour
 
 
     // ****************************************************************************
-    // Functionality: 
+    // Functionality: Removes the highlight material from the button object and 
+    //                reapplies the initial material when a collision with the
+    //                Oculus controllers is no longer detected.
+    //                For some objects, the visible button model is a child object
+    //                of an invisible "grab box" that handles collisions, so the
+    //                function needs to check if the object handling collisions has
+    //                a Renderer component before it attempts to apply the material.
     // 
     // Parameters: none
     // Return: none
