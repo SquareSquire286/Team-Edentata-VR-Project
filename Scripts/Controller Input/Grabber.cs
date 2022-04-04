@@ -7,6 +7,19 @@ using UnityEngine;
 // Purpose: This class implements the hand functions for the Oculus 
 //          Quest. Its main functions allow the user to pick up 
 //          objects and let them go. 
+//
+// Class Variables: 
+//          highlightMaterial ->
+//          pressHighlightMaterial ->
+//          paramaterMaterial ->
+//          color1, color2 ->
+//          currentCollisions ->
+//          buttons ->
+//          controller ->
+//          grabbedObject ->
+//          pressedButton ->
+//          grabbed ->
+//          timeLastPressed ->
 //***************************************************************
 public class Grabber : MonoBehaviour
 {
@@ -85,7 +98,7 @@ public class Grabber : MonoBehaviour
     //                collider to a list of colliders.
     //                
     //                
-    // Parameters: none
+    // Parameters: col
     // Return: none
     // *****************************************************************************
     void OnTriggerEnter(Collider col)
@@ -125,7 +138,7 @@ public class Grabber : MonoBehaviour
     //                cares about the first frame that it is pressed. 
     //                
     //                
-    // Parameters: none
+    // Parameters: col
     // Return: none
     // *****************************************************************************
     void OnTriggerStay(Collider col)
@@ -161,7 +174,7 @@ public class Grabber : MonoBehaviour
     //                being collided.
     //                
     //                
-    // Parameters: none
+    // Parameters: col
     // Return: none
     // *****************************************************************************
     void OnTriggerExit(Collider col)
@@ -182,11 +195,26 @@ public class Grabber : MonoBehaviour
         }
     }
 
+    // ****************************************************************************
+    // Functionality: 
+    //                
+    //                
+    // Parameters: timeLastPressed
+    // Return: none
+    // *****************************************************************************
     public void SetTimeLastPressed(float timeLastPressed)
     {
         this.timeLastPressed = timeLastPressed;
     }
 
+
+    // ****************************************************************************
+    // Functionality: 
+    //                
+    //                
+    // Parameters: none
+    // Return: timeLastPressed
+    // *****************************************************************************
     public float GetTimeLastPressed()
     {
         return timeLastPressed;

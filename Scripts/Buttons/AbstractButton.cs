@@ -63,7 +63,6 @@ public abstract class AbstractButton : MonoBehaviour
         {
             OnPress();
         }
-
         else 
         {
             OnRelease();
@@ -107,15 +106,19 @@ public abstract class AbstractButton : MonoBehaviour
     //                function needs to check if the object handling collisions has
     //                a Renderer component before it attempts to apply the material.
     // 
-    // Parameters: none
+    // Parameters: highlightMaterial
     // Return: none
     // ****************************************************************************
     public virtual void ApplyHighlight(Material highlightMaterial)
     {
         if (GetComponent<Renderer>() == null)
+        {
             transform.GetChild(0).gameObject.GetComponent<Renderer>().material = highlightMaterial;
-
-        else GetComponent<Renderer>().material = highlightMaterial;
+        }
+        else 
+        {
+            GetComponent<Renderer>().material = highlightMaterial;
+        }
     }
 
 
@@ -134,8 +137,12 @@ public abstract class AbstractButton : MonoBehaviour
     public virtual void RemoveHighlight()
     {
         if (GetComponent<Renderer>() == null)
+        {
             transform.GetChild(0).gameObject.GetComponent<Renderer>().material = initialMaterial;
-
-        else GetComponent<Renderer>().material = initialMaterial;
+        }
+        else 
+        {
+            GetComponent<Renderer>().material = initialMaterial;
+        }
     }
 }

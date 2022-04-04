@@ -9,6 +9,12 @@ using UnityEngine;
 //          represent the joystick's deviation from the default 
 //          position in both horizontal and vertical directions, 
 //          and applies this vector to the camera's rigidbody motion.
+//
+// Class Variables:
+//          speed ->
+//          camera ->
+//          cameraRigidBody ->
+//
 //***************************************************************
 public class Movement : MonoBehaviour
 {
@@ -16,13 +22,24 @@ public class Movement : MonoBehaviour
     public GameObject camera;
     private Rigidbody cameraRigidbody;
 
-    // Start is called before the first frame update
+    // ****************************************************************************
+    // Functionality: Start is called before the first frame update        
+    //                
+    // Parameters: none
+    // Return: none
+    // *****************************************************************************
     void Start()
     {
         cameraRigidbody = camera.GetComponent<Rigidbody>(); // initialize the camera rigidbody
     }
 
-    // Update is called once per frame
+
+    // ****************************************************************************
+    // Functionality: Update is called once per frame.      
+    //                
+    // Parameters: none
+    // Return: none
+    // *****************************************************************************
     void Update()
     {
         var joystick = OVRInput.Get(OVRInput.RawAxis2D.LThumbstick); // "joystick" is a 2D Vector (x, y)

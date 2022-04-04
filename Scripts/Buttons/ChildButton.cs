@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -53,9 +53,13 @@ public class ChildButton : AbstractButton
         roomController.UpdateRoomConditions(this.gameObject);
 
         if (stoppedLastTime)
+        {
             affectedObject.ExecuteEvent();
-
-        else affectedObject.StopEvent();
+        }
+        else 
+        {
+            affectedObject.StopEvent();
+        }
 
         stoppedLastTime = !stoppedLastTime;
     }

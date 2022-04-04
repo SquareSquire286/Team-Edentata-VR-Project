@@ -12,6 +12,7 @@ using UnityEngine;
 //          green -> a material which acts as an indicator that the
 //                   door has been unlocked
 //          renderer -> the Renderer component of the button object
+//
 //          All class variables from AbstractButton are inherited.
 //          The AbstractButtonEvent field must be initialized to an
 //          AudioButtonEvent on an audio source that plays a room
@@ -22,6 +23,7 @@ public class TransitionButton : AbstractButton
     public RoomController roomController;
     public Material green;
     private Renderer renderer;
+
 
     // *************************************************************
     // Functionality: Called on the first frame in which the button

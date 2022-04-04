@@ -41,9 +41,13 @@ public class VideoButtonEvent : AbstractButtonEvent
     public override void ExecuteEvent()
     {
         if (videoPlayer.isPlaying)
+        {
             videoPlayer.Pause();
-
-        else videoPlayer.Play();
+        }
+        else 
+        {
+            videoPlayer.Play();
+        }
     }
 
 

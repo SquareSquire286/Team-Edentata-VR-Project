@@ -42,10 +42,14 @@ public class AudioButtonEvent : AbstractButtonEvent
     // ********************************************************************
     public override void ExecuteEvent()
     {
-        if (hasToggleableAudio)
+        if(hasToggleableAudio)
+        {
             this.SwitchClip_ThenPlay();
-
-        else audioSource.Play();
+        }
+        else 
+        {
+            audioSource.Play();
+        }
     }
 
 
@@ -58,8 +62,11 @@ public class AudioButtonEvent : AbstractButtonEvent
     // ********************************************************************
     private void SwitchClip_ThenPlay()
     {
-        if (audioSource.isPlaying) // Prevent NullReferenceExceptions by stopping playback before replacing the AudioClip
+        // Prevent NullReferenceExceptions by stopping playback before replacing the AudioClip
+        if(audioSource.isPlaying)
+        { 
             audioSource.Stop();
+        }
 
         audioSource.clip = soundBites[Random.Range(0, soundBites.Length)];
         audioSource.Play(); // Replace the clip to be played by the audio source with a new one in the array, 
