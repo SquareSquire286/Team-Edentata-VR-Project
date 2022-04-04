@@ -1,12 +1,24 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// **************************************************************
+// Purpose: A class responsible for applying haptic feedback to the
+//          Oculus controller(s) upon detecting a collision with a
+//          HapticGenerator object.
+//          Must be applied to the same object as Grabber, as the
+//          mechanism of colliding with objects is the same in both
+//          scripts, but we chose to separate the functionalities.
+// Class variables:
+//          controller -> instance of Controller script from which
+//                        the correct hand is ascertained
+//***************************************************************
 public class HapticReceiver : MonoBehaviour
 {
     public Controller controller;
 
-    void OnTriggerEnter(Collider col)
+    void OnTriggerEnter(Collider col) // checks if the collision was with a HapticGenerator, and if so, applies a vibration function
+                                      // to the correct controller, as dictated by the enumerated hand value
     {
         if (col.gameObject.GetComponent<HapticGenerator>() != null) // indicates collision with a spider
         {
