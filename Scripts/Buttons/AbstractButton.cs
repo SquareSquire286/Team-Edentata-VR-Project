@@ -6,11 +6,11 @@ using UnityEngine;
 // Purpose: Interface for any button that can be pressed / held with the controller Triggers
 //
 // Class Variables: 
-//          initialMaterial ->
-//          isPressed ->
-//          releasedPosition ->
-//          pressedPosition ->
-//          affectedObject ->
+//          initialMaterial -> the button's default material
+//          isPressed -> a Boolean condition that indicates whether the button is currently in the pressed state or not
+//          releasedPosition -> a 3D vector that represents the button's position when it is not pressed
+//          pressedPosition -> a 3D vector that represents the button's position when it has been pressed
+//          affectedObject -> an AbstractButtonEvent that is triggered by the pressing of this button
 //                
 //          
 // *************************************************************************************
@@ -53,7 +53,7 @@ public abstract class AbstractButton : MonoBehaviour
     //                otherwise releases the button.  
     // 
     // Parameters: newStatus -> true if button is pressed 
-    // Return: current state of button
+    // Return: none
     // ****************************************************************************
     public virtual void SetPressStatus(bool newStatus)
     {
@@ -72,7 +72,9 @@ public abstract class AbstractButton : MonoBehaviour
 
 
     // ****************************************************************************
-    // Functionality: Button is pressed
+    // Functionality: The button is translated to its pressed position, and its
+    //                corresponding event (if initialized in the Unity Inspector
+    //                window) is executed.
     // 
     // Parameters: none
     // Return: none
