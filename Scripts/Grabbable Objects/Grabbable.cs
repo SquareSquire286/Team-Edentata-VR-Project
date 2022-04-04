@@ -26,7 +26,9 @@ public class Grabbable : AbstractGrabbable
         rigidbody = GetComponent<Rigidbody>();
 
         if (GetComponent<Renderer>() != null)
+        {
             initialMaterial = GetComponent<Renderer>().material;
+        }
     }
 
 

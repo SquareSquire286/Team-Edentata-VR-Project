@@ -2,17 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// **************************************************************
+// Purpose: 
+//
+// Class Variables: 
+//          leftHand ->
+//          rightHand ->
+//          button ->
+//***************************************************************
 public class Remote : RoomParameterGrabbable
 {
     public GameObject leftHand, rightHand;
     public AbstractButton button;
 
+    // ****************************************************************************
+    // Functionality: 
+    // 
+    //
+    // Parameters: none
+    // Return: none
+    // *****************************************************************************
     public override void Start()
     {
         isGrabbed = false;
         rigidbody = GetComponent<Rigidbody>();
     }
 
+
+    // ****************************************************************************
+    // Functionality: 
+    // 
+    //
+    // Parameters: none
+    // Return: none
+    // *****************************************************************************
     public override void WhileGrabbed()
     {
         transform.parent = handGrabbingMe.transform;
@@ -28,9 +51,13 @@ public class Remote : RoomParameterGrabbable
             float timeLastPressed;
 
             if (handGrabbingMe == rightHand)
+            {
                 timeLastPressed = rightHand.GetComponent<Grabber>().GetTimeLastPressed();
-
-            else timeLastPressed = leftHand.GetComponent<Grabber>().GetTimeLastPressed();
+            }
+            else 
+            {
+                timeLastPressed = leftHand.GetComponent<Grabber>().GetTimeLastPressed();
+            }
 
             if (Time.time - timeLastPressed > 0.6f)
             {
@@ -39,13 +66,19 @@ public class Remote : RoomParameterGrabbable
                 leftHand.GetComponent<Grabber>().SetTimeLastPressed(Time.time);
             }
         }
-
         else if ((OVRInput.GetUp(OVRInput.RawButton.RIndexTrigger) && handGrabbingMe == rightHand) || (OVRInput.GetUp(OVRInput.RawButton.LIndexTrigger) && handGrabbingMe == leftHand))
         {
             button.OnRelease();
         }
     }
 
+    // ****************************************************************************
+    // Functionality: 
+    // 
+    //
+    // Parameters: none
+    // Return: none
+    // *****************************************************************************
     public override void WhenReleased()
     {
         transform.parent = null;

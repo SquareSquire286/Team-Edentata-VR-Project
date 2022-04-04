@@ -7,11 +7,14 @@ using UnityEngine;
 //          that can be grabbed and held by the user.
 // 
 // Class Variables: 
-//                   isGrabbed -> dictates the objects per
-//                                frame behaviour
+//          isGrabbed -> dictates the objects per frame behaviour                            
+//          handGrabbingMe -> the HandAnchor game object that is 
+//                            currently holding the object
+//          initialMaterial ->
+//          rigidbody ->
+//          previousPosition ->
+//          previousRotation ->
 //
-//                   handGrabbingMe -> the HandAnchor game object that is 
-//                                     currently holding the object
 // ***********************************************************************
 public abstract class AbstractGrabbable : MonoBehaviour
 {
@@ -50,10 +53,10 @@ public abstract class AbstractGrabbable : MonoBehaviour
 
 
     // ****************************************************************************
-    // Functionality: If the object's grab status chnages from True to False, 
+    // Functionality: If the object's grab status changes from True to False, 
     //                execute the object's while-not-grabbed behaviour
     // 
-    // Parameters: none
+    // Parameters: newStatus, hand
     // return: none
     // ****************************************************************************
     public virtual void SetGrabStatus(bool newStatus, GameObject hand)
@@ -61,15 +64,17 @@ public abstract class AbstractGrabbable : MonoBehaviour
         isGrabbed = newStatus;
         handGrabbingMe = hand;
 
-        if (!newStatus) 
+        if (!newStatus)
+        {
             WhenReleased();
+        }
     }
 
 
     // ****************************************************************************
     // Functionality: Called by Grabber whenever a candidate object is 
     //                found for a HandAnchor to hold - the last condition is that
-    //                the objectmust not alreadybe held by the other HandAnchor
+    //                the object must not already be held by the other Hand Anchor
     // 
     // Parameters: none
     // return: isGrabbed - boolean
@@ -105,29 +110,53 @@ public abstract class AbstractGrabbable : MonoBehaviour
         
     }
 
+    // ****************************************************************************
+    // Functionality: 
+    // 
+    // Parameters: highlightMaterial
+    // return: none
+    // ****************************************************************************
     public virtual void ApplyHighlight(Material highlightMaterial)
     {
         if (GetComponent<Renderer>() == null)
         {
             if (transform.childCount > 0)
+            {
                 transform.GetChild(0).gameObject.GetComponent<Renderer>().material = highlightMaterial;
-
-            else transform.parent.gameObject.GetComponent<Renderer>().material = highlightMaterial;
+            }
+            else 
+            {
+                transform.parent.gameObject.GetComponent<Renderer>().material = highlightMaterial;
+            }
         }
-
-        else GetComponent<Renderer>().material = highlightMaterial;
+        else 
+        {
+            GetComponent<Renderer>().material = highlightMaterial;
+        }
     }
 
+    // ****************************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ****************************************************************************
     public virtual void RemoveHighlight()
     {
         if (GetComponent<Renderer>() == null)
         {
             if (transform.childCount > 0)
+            {
                 transform.GetChild(0).gameObject.GetComponent<Renderer>().material = initialMaterial;
-
-            else transform.parent.gameObject.GetComponent<Renderer>().material = initialMaterial;
+            }
+            else 
+            {
+                transform.parent.gameObject.GetComponent<Renderer>().material = initialMaterial;
+            }
         }
-
-        else GetComponent<Renderer>().material = initialMaterial;
+        else 
+        {
+            GetComponent<Renderer>().material = initialMaterial;
+        }
     }
 }
