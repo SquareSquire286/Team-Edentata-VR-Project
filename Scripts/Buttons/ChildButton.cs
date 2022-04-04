@@ -17,8 +17,13 @@ public class ChildButton : AbstractButton
     public RoomController roomController;
 
 
-    
-    // Start is called before the first frame update
+
+    // *************************************************************
+    // Functionality: Start is called before the first frame update 
+    //                                                              
+    // Parameters: none                                             
+    // Return: none                                                 
+    // *************************************************************
     public override void Start()
     {
         stoppedLastTime = true;
@@ -26,6 +31,14 @@ public class ChildButton : AbstractButton
         transform.localScale = releasedPosition;
     }
 
+
+    
+    // ****************************************************************************
+    // Functionality: Button is pressed
+    // 
+    // Parameters: none
+    // Return: none
+    // ****************************************************************************
     public override void OnPress()
     {
         Debug.Log("Stopped last time: " + stoppedLastTime);
@@ -40,6 +53,13 @@ public class ChildButton : AbstractButton
         stoppedLastTime = !stoppedLastTime;
     }
 
+
+    // ****************************************************************************
+    // Functionality: Button is released
+    // 
+    // Parameters: none
+    // Return: none
+    // ****************************************************************************
     public override void OnRelease()
     {
         transform.localScale = releasedPosition;
