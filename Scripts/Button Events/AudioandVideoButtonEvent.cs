@@ -27,8 +27,9 @@ public class AudioandVideoButtonEvent : AbstractButtonEvent
 
 
     // ********************************************************************
-    // Functionality: Start is called before the first frame update
-    //
+    // Functionality: Start is called before the first frame update.
+    //		      Hides the transition button model, sets audio play
+    //                handler to false, initializes audio and video players.
     // Parameters: none
     // Return: none
     // ********************************************************************
@@ -43,7 +44,11 @@ public class AudioandVideoButtonEvent : AbstractButtonEvent
 
     
     // ****************************************************************************
-    // Functionality: 
+    // Functionality: Called on the first frame that the event is executed.
+    //		      Pauses the video player if it is currently playing; otherwise
+    //		      plays the video player and plays the audio if it has not yet
+    //		      been played. Invokes the transition button activation function
+    //                after the user-specified delay interval has passed.
     // 
     // Parameters: none
     // Return: none
@@ -68,7 +73,9 @@ public class AudioandVideoButtonEvent : AbstractButtonEvent
 
 
     // ****************************************************************************
-    // Functionality: 
+    // Functionality: Called when the specified delay interval has passed after the
+    //   	      first call of ExecuteEvent. Activates the renderer for the
+    //		      transition button.
     // 
     // Parameters: none
     // Return: none
