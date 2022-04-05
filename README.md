@@ -1,5 +1,10 @@
 ![ArachnoTherapy_Banner](Documentation/Misc/ArachnoTherapy_Banner.png)
-![Commercial](https://youtu.be/1JCVEE52tXU)
+<p style="text-align:center">
+Click 
+    <a href="http//www.google.com">here </a> 
+    to watch our commercial!
+</p>
+
 # Members
 ![Team_Pictures](Documentation/Misc/Team_Pictures.png)
 
