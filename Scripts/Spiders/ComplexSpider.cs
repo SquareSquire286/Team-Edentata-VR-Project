@@ -2,15 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// ***********************************************************************
+// Purpose: 
+//
+// Class Variables: 
+//          hitPlayer ->
+//   
+//
+// ***********************************************************************
 public class ComplexSpider : AbstractSpider
 {
     private bool hitPlayer;
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void ChooseAction()
     {
         if (hitPlayer)
+        {
             return;
-
+        }
         else
         {
             int choice = Random.Range(0, 4);
@@ -25,7 +42,13 @@ public class ComplexSpider : AbstractSpider
         }
     }
 
-    // Start is called before the first frame update
+    
+    // ************************************************************
+    // Functionality: Start is called before the first frame update
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     void Start()
     {
         selfTag = "ComplexSpider";
@@ -37,11 +60,25 @@ public class ComplexSpider : AbstractSpider
         InvokeRepeating("ChooseAction", 0f, 4f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     void ResetAfterPlayerHit()
     {
         hitPlayer = false;
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Idle()
     {
         animator.SetBool("StartJump", false);
@@ -55,6 +92,13 @@ public class ComplexSpider : AbstractSpider
         Invoke("ResetAfterPlayerHit", 3f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Move()
     {
         animator.SetBool("StartJump", false);
@@ -68,11 +112,20 @@ public class ComplexSpider : AbstractSpider
         beginMovement = true;
 
         if (!hitWall)
+        {
             leftWall = true;
+        }
 
         Invoke("ResetAfterPlayerHit", 3f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Jump()
     {
         animator.SetBool("StartJump", true);
@@ -87,6 +140,13 @@ public class ComplexSpider : AbstractSpider
         Invoke("ResetAfterPlayerHit", 3f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Attack()
     {
         animator.SetBool("StartJump", false);
@@ -101,6 +161,13 @@ public class ComplexSpider : AbstractSpider
         Invoke("ResetAfterPlayerHit", 3f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: col
+    // return: none
+    // ************************************************************
     public override void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == playerTag || col.gameObject.tag == selfTag)
@@ -117,13 +184,11 @@ public class ComplexSpider : AbstractSpider
                 default: Idle(); break;
             }
         }
-
         else if (col.gameObject.tag == basicSpiderTag || col.gameObject.tag == intermediateSpiderTag)
         {
             hitPlayer = true;
             Attack();
         }
-
         else
         {
             transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + Random.Range(90, 271), transform.rotation.eulerAngles.z);
@@ -132,6 +197,13 @@ public class ComplexSpider : AbstractSpider
         }
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: col
+    // return: none
+    // ************************************************************
     public void OnTriggerExit(Collider col)
     {
         if (col.gameObject.tag == wallTag || col.gameObject.tag == selfTag)

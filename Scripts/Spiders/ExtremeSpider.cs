@@ -2,15 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// ***********************************************************************
+// Purpose: 
+//
+// Class Variables: 
+//          hitPlayer ->
+//   
+//
+// ***********************************************************************
 public class ExtremeSpider : AbstractSpider
 {
     private bool hitPlayer;
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void ChooseAction()
     {
         if (hitPlayer)
+        {
             return;
-
+        }
         else
         {
             int choice = Random.Range(0, 3);
@@ -24,7 +41,12 @@ public class ExtremeSpider : AbstractSpider
         }
     }
 
-    // Start is called before the first frame update
+    // ************************************************************
+    // Functionality: Start is called before the first frame update
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     void Start()
     {
         selfTag = "ExtremeSpider";
@@ -36,11 +58,25 @@ public class ExtremeSpider : AbstractSpider
         InvokeRepeating("ChooseAction", 0f, 3.5f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     void ResetAfterPlayerHit()
     {
         hitPlayer = false;
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Idle()
     {
         animator.SetBool("StartJump", false);
@@ -54,6 +90,13 @@ public class ExtremeSpider : AbstractSpider
         Invoke("ResetAfterPlayerHit", 3f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Move()
     {
         animator.SetBool("StartJump", false);
@@ -67,11 +110,20 @@ public class ExtremeSpider : AbstractSpider
         beginMovement = true;
 
         if (!hitWall)
+        {
             leftWall = true;
+        }
 
         Invoke("ResetAfterPlayerHit", 3f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Jump()
     {
         animator.SetBool("StartJump", true);
@@ -86,6 +138,13 @@ public class ExtremeSpider : AbstractSpider
         Invoke("ResetAfterPlayerHit", 3f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Attack()
     {
         animator.SetBool("StartJump", false);
@@ -100,6 +159,13 @@ public class ExtremeSpider : AbstractSpider
         Invoke("ResetAfterPlayerHit", 3f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: col
+    // return: none
+    // ************************************************************
     public override void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == wallTag)
@@ -108,7 +174,6 @@ public class ExtremeSpider : AbstractSpider
             hitWall = true;
             leftWall = false;
         }
-
         else
         {
             hitPlayer = true;

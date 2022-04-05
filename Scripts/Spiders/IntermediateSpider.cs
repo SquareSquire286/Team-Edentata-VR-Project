@@ -2,15 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// ***********************************************************************
+// Purpose: 
+//
+// Class Variables: 
+//          hitPlayer ->
+//   
+//
+// ***********************************************************************
 public class IntermediateSpider : AbstractSpider
 {
     private bool hitPlayer;
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void ChooseAction()
     {
         if (hitPlayer)
+        {
             return;
-
+        }
         else
         {
             int choice = Random.Range(0, 5);
@@ -25,7 +42,12 @@ public class IntermediateSpider : AbstractSpider
         }
     }
 
-    // Start is called before the first frame update
+    // ************************************************************
+    // Functionality: Start is called before the first frame update
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     void Start()
     {
         selfTag = "IntermediateSpider";
@@ -37,11 +59,25 @@ public class IntermediateSpider : AbstractSpider
         InvokeRepeating("ChooseAction", 0f, 4.5f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     void ResetAfterPlayerHit()
     {
         hitPlayer = false;
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Idle()
     {
         animator.SetBool("StartJump", false);
@@ -54,6 +90,13 @@ public class IntermediateSpider : AbstractSpider
         Invoke("ResetAfterPlayerHit", 3f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Move()
     {
         animator.SetBool("StartJump", false);
@@ -66,11 +109,20 @@ public class IntermediateSpider : AbstractSpider
         beginMovement = true;
 
         if (!hitWall)
+        {
             leftWall = true;
+        }
 
         Invoke("ResetAfterPlayerHit", 3f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Jump()
     {
         animator.SetBool("StartJump", true);
@@ -84,6 +136,13 @@ public class IntermediateSpider : AbstractSpider
         Invoke("ResetAfterPlayerHit", 3f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == wallTag || col.gameObject.tag == complexSpiderTag || col.gameObject.tag == extremeSpiderTag)
@@ -92,7 +151,6 @@ public class IntermediateSpider : AbstractSpider
             hitWall = true;
             leftWall = false;
         }
-
         else if (col.gameObject.tag == playerTag || col.gameObject.tag == selfTag)
         {
             hitPlayer = true;
@@ -100,17 +158,29 @@ public class IntermediateSpider : AbstractSpider
             int choice = Random.Range(0, 20);
 
             if (choice % 2 == 0) // Cases 0, 2, 4, 6, 8, 10, 12, 14, 16, and 18
+            {
                 Move();
-
+            }
             else if (choice != 1) // Cases 3, 5, 7, 9, 11, 13, 15, 17, and 19
+            {
                 Idle();
-
-            else Jump(); // Case 1
+            }
+            else 
+            {
+                Jump(); // Case 1
+            }
         }
 
         // else if basic spider, do nothing
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: col
+    // return: none
+    // ************************************************************
     public void OnTriggerExit(Collider col)
     {
         if (col.gameObject.tag == wallTag || col.gameObject.tag == selfTag)

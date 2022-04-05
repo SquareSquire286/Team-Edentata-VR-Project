@@ -2,9 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// ***********************************************************************
+// Purpose: 
+//
+// Class Variables: 
+//          None
+//   
+//
+// ***********************************************************************
 public class BasicSpider : AbstractSpider
 {
-    // Start is called before the first frame update
+    // ************************************************************
+    // Functionality: Start is called before the first frame update
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     void Start()
     {
         selfTag = "BasicSpider";
@@ -15,6 +29,13 @@ public class BasicSpider : AbstractSpider
         InvokeRepeating("ChooseAction", 0f, 5f);
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Idle()
     {
         animator.SetBool("StartIdle", true);
@@ -24,6 +45,13 @@ public class BasicSpider : AbstractSpider
         rigidbody.velocity = Vector3.zero;
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void Move()
     {
         animator.SetBool("StartIdle", false);
@@ -40,6 +68,13 @@ public class BasicSpider : AbstractSpider
         }
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public override void OnTriggerEnter(Collider col)
     {
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + Random.Range(90, 271), transform.rotation.eulerAngles.z);
@@ -47,6 +82,13 @@ public class BasicSpider : AbstractSpider
         leftWall = false;
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     public void OnTriggerExit(Collider col)
     {
         if (col.gameObject.tag == wallTag || col.gameObject.tag == selfTag)
