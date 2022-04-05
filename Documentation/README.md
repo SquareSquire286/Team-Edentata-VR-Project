@@ -30,13 +30,13 @@
 - [ ] Code testing plan / results
 - [ ] User testing plan / results
 - [ ] Code quality review report
-- [ ] Project poster
+- [X] [Project poster](Project_Poster.pdf)
 - [X] Video blogs (vlogs) and demo(s)  
   [Vlog #4](https://youtu.be/ifcloafs_rU)  
   [Vlog #5](https://youtu.be/l-9Ft43D0aw)
 - [X] [Project commercial](https://youtu.be/1JCVEE52tXU)
-- [ ] Customer help / user training / knowledgebase
-- [ ] Final presentation and demo
+- [X] Customer help / user training / knowledgebase * in game tutorial *
+- [X] Final presentation and demo (April 9)
 - [ ] Project experience report
 
 ## Additional Documentation
