@@ -1,6 +1,4 @@
-# ArachnoTherapy VR
-## Team Edentata - ENSE 477 Capstone Project
-
+![ArachnoTherapy_Banner](Documentation/Misc/ArachnoTherapy_Banner.png)
 # Members
 ![Team_Pictures](Documentation/Misc/Team_Pictures.png)
 
