@@ -18,7 +18,7 @@ _Note: Version control through Unity was done using PlasticSCM therefore all reg
 
 
 # Instructions
-<insert instructions here>
+< insert instructions here >
 
 # Special Thanks
 
