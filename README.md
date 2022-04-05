@@ -2,9 +2,7 @@
 ## Team Edentata - ENSE 477 Capstone Project
 
 # Members
-- Jacob Chapman (Business Lead, Backend Developer)
-- Roxanne Harrison (Design Lead, Frontend Developer)
-- Jacob Sauer (Scrum Master, Lead Developer)
+![Team_Pictures](Documentation/Misc/Team_Pictures.png)
 
 # Documentation
 All document, vlog, and project related links can be found in the [Documentation](Documentation/) section. 
