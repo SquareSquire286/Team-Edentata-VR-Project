@@ -1,9 +1,6 @@
 ![ArachnoTherapy_Banner](Documentation/Misc/ArachnoTherapy_Banner.png)
-<p style="text-align:center">
-Click 
-    <a href="http//www.google.com">here </a> 
-    to watch our commercial!
-</p>
+
+<a href="https://youtu.be/1JCVEE52tXU" style="text-align:center">Click to watch our commercial!</a>
 
 # Members
 ![Team_Pictures](Documentation/Misc/Team_Pictures.png)
