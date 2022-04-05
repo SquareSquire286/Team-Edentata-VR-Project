@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// ***********************************************************************
+// Purpose: 
+//     
+//
+// ***********************************************************************
 public enum SpiderDiversity
 {
     Void,
