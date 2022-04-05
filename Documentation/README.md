@@ -34,7 +34,7 @@
 - [X] Video blogs (vlogs) and demo(s)  
   [Vlog #4](https://youtu.be/ifcloafs_rU)  
   [Vlog #5](https://youtu.be/l-9Ft43D0aw)
-- [ ] Project commercial
+- [X] [Project commercial](https://youtu.be/1JCVEE52tXU)
 - [ ] Customer help / user training / knowledgebase
 - [ ] Final presentation and demo
 - [ ] Project experience report
