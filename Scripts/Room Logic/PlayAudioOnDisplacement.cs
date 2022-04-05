@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// ***********************************************************************
+// Purpose: 
+//
+// Class Variables: 
+//          hasActivated ->
+//          initialPosition ->
+//          audioSource ->
+//          room0Screen ->
+// ***********************************************************************
 public class PlayAudioOnDisplacement : MonoBehaviour
 {
     private bool hasActivated;
@@ -9,7 +19,12 @@ public class PlayAudioOnDisplacement : MonoBehaviour
     public ManyToOneAudioSource audioSource;
     public GameObject room0Screen;
 
-    // Start is called before the first frame update
+    // ************************************************************
+    // Functionality: Start is called before the first frame update
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     void Start()
     {
         room0Screen.SetActive(false);
@@ -17,7 +32,14 @@ public class PlayAudioOnDisplacement : MonoBehaviour
         initialPosition = transform.position;
     }
 
-    // Update is called once per frame
+
+
+    // ************************************************************
+    // Functionality: Update is called once per frame
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     void Update()
     {
         if (!hasActivated)

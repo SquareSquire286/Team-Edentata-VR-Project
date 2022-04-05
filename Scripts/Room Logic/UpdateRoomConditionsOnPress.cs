@@ -2,19 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// ***********************************************************************
+// Purpose: 
+//
+// Class Variables: 
+//          hasActivated ->
+//          pressedPosition ->
+//          room0Controller ->         
+//
+// ***********************************************************************
 public class UpdateRoomConditionsOnPress : MonoBehaviour
 {
     private bool hasActivated;
     public Vector3 pressedPosition;
     public RoomController room0Controller;
 
-    // Start is called before the first frame update
+    // ************************************************************
+    // Functionality: Start is called before the first frame update
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     void Start()
     {
         hasActivated = false;
     }
 
-    // Update is called once per frame
+
+    // ************************************************************
+    // Functionality: Update is called once per frame
+    // 
+    // Parameters: none
+    // return: none
+    // ************************************************************
     void Update()
     {
         if (!hasActivated)
