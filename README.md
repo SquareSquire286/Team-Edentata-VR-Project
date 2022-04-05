@@ -1,7 +1,7 @@
 ![ArachnoTherapy_Banner](Documentation/Misc/ArachnoTherapy_Banner.png)
-<p align="center">
+<h2 align="center">
   <a href="https://youtu.be/1JCVEE52tXU" >Click to watch our commercial!</a>
-</p>
+</h2>
 
 # Members
 ![Team_Pictures](Documentation/Misc/Team_Pictures.png)
