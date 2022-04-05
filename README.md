@@ -28,5 +28,5 @@ _Note: Version control through Unity was done using PlasticSCM therefore all reg
 - University of Regina Armadillo Lab
 
 # Disclaimer
->ArachnoTherapy VR Copyright (C) 2022 Jacob Chapman, Roxanne Harrison, Jacob Sauer
+>ArachnoTherapy VR Copyright (C) 2022 Jacob Chapman, Roxanne Harrison, Jacob Sauer.  
 >This is not a clinically proven therapy tool. Use at your own risk. 
