@@ -181,6 +181,13 @@ public class ExtremeSpider : AbstractSpider
         }
     }
 
+
+    // ************************************************************
+    // Functionality: 
+    // 
+    // Parameters: col
+    // return: none
+    // ************************************************************
     public void OnTriggerExit(Collider col)
     {
         if (col.gameObject.tag == wallTag || col.gameObject.tag == selfTag)

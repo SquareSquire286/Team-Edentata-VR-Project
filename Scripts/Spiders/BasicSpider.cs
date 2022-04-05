@@ -72,7 +72,7 @@ public class BasicSpider : AbstractSpider
     // ************************************************************
     // Functionality: 
     // 
-    // Parameters: none
+    // Parameters: col
     // return: none
     // ************************************************************
     public override void OnTriggerEnter(Collider col)
@@ -86,7 +86,7 @@ public class BasicSpider : AbstractSpider
     // ************************************************************
     // Functionality: 
     // 
-    // Parameters: none
+    // Parameters: col
     // return: none
     // ************************************************************
     public void OnTriggerExit(Collider col)

@@ -155,7 +155,7 @@ public class AbstractSpider : MonoBehaviour
     // ************************************************************
     // Functionality: 
     // 
-    // Parameters: 
+    // Parameters: col
     // return: none
     // ************************************************************
     public virtual void OnTriggerStay(Collider col)
