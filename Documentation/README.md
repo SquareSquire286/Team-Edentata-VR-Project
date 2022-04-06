@@ -22,11 +22,14 @@
 - [X] [Project roadmaps (ENSE 477 Kanban)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/3)
 - [X] [Project roadmaps (USM)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/2)
 - [X] Project source code   
-  [Buttons](../Source%20Code/Buttons)  
-  [Button Events](../Source%20Code/Button%20Events)  
-  [Controller Input](../Source%20Code/Controller%20Input)  
-  [Grabbable Objects](../Source%20Code/Grabbable%20Objects)  
-  [Spiders](Source%20Code/Spiders)   
+  [Buttons Events](../Scripts/Button%20Events/) 
+  [Buttons](../Scripts/Buttons/) 
+  [Controller Input](../Scripts/Controller%20Input/)
+  [Grabbable Objects](../Scripts/Grabbable%20Objects/)
+  [Helper Functions](../Scripts/Helper%20Functions/)
+  [Room Logic](../Scripts/Room%20Logic/)
+  [Spider Creation Interface](../Scripts/Spider%20Creation%20Interface/)
+  [Spiders](../Scripts/Spiders/)
 - [ ] Code testing plan / results
 - [ ] User testing plan / results
 - [ ] Code quality review report
@@ -35,7 +38,7 @@
   [Vlog #4](https://youtu.be/ifcloafs_rU)  
   [Vlog #5](https://youtu.be/l-9Ft43D0aw)
 - [X] [Project commercial](https://youtu.be/1JCVEE52tXU)
-- [X] Customer help / user training / knowledgebase * in game tutorial *
+- [X] Customer help / user training / knowledgebase (In game tutorial)
 - [X] Final presentation and demo (April 9)
 - [ ] Project experience report
 
