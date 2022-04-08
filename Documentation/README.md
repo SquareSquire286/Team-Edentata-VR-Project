@@ -1,15 +1,15 @@
 # Project Deliverables
 
 ## Project Initialization and Planning
-- [X] [Business case](./business_case.pdf)
-- [X] [Project charter](./project_charter.pdf) 
-- [X] [Problem & requirements prerequisites](./project_requirements.pdf)
+- [X] [Business case](./Business_Case.pdf)
+- [X] [Project charter](./Project_Charter.pdf) 
+- [X] [Problem & requirements prerequisites](./Project_Requirements.pdf)
 - [X] System / architectural design pictures  
   [Class Diagram](./ClassDiagram.pdf)  
-  [Environment Layout](./environment_layout.pdf)  
-  [Progression Sequence](./environment_progression_sequence.pdf)  
-- [X] [Prototypes / wireframes (lo/hi-fidelity)](./lo_fi_prototypes.pdf)
-- [X] [Role / attribute based access control (R/ABAC) vision](./raci_chart.pdf)
+  [Environment Layout](./Environment_Layout.pdf)  
+  [Progression Sequence](./Progression_Sequence.pdf)  
+- [X] [Prototypes / wireframes (lo/hi-fidelity)](./LoFi_Prototypes.pdf)
+- [X] [Role / attribute based access control (R/ABAC) vision](./RACI_Chart.pdf)
 - [X] [Project roadmaps (ENSE 400 Kanban)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/1)
 - [X] [Project roadmaps (USM)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/2)
 - [X] Video blogs (vlogs) and demo(s)  
@@ -22,6 +22,7 @@
 - [X] [Project roadmaps (ENSE 477 Kanban)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/3)
 - [X] [Project roadmaps (USM)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/2)
 - [X] Project source code   
+  [Plastic SCM](https://www.plasticscm.com/orgs/ense_400_477_capstone/repos/ENSE-477-Capstone/changesets)
   [Buttons Events](../Scripts/Button%20Events/)   
   [Buttons](../Scripts/Buttons/)   
   [Controller Input](../Scripts/Controller%20Input/)  
@@ -30,9 +31,11 @@
   [Room Logic](../Scripts/Room%20Logic/)  
   [Spider Creation Interface](../Scripts/Spider%20Creation%20Interface/)  
   [Spiders](../Scripts/Spiders/)  
-- [ ] Code testing plan / results
-- [ ] User testing plan / results
-- [ ] Code quality review report
+- [X] [Code testing plan](./Code_Testing_Plan.pdf)
+- [X] [Code testing results](./Code_Test_Results.pdf)
+- [X] [User testing plan](./User_Testing_Plan.pdf)
+- [X] [User testing results](./User_Test_Results.pdf)
+- [X] [Code quality review report](./Code_Quality_Review_Report.pdf)
 - [X] [Project poster](Project_Poster.pdf)
 - [X] Video blogs (vlogs) and demo(s)  
   [Vlog #4](https://youtu.be/ifcloafs_rU)  
