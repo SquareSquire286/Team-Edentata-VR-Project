@@ -22,7 +22,6 @@
 - [X] [Project roadmaps (ENSE 477 Kanban)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/3)
 - [X] [Project roadmaps (USM)](https://github.com/SquareSquire286/Team-Edentata-VR-Project/projects/2)
 - [X] Project source code   
-  [Plastic SCM](https://www.plasticscm.com/orgs/ense_400_477_capstone/repos/ENSE-477-Capstone/changesets)
   [Buttons Events](../Scripts/Button%20Events/)   
   [Buttons](../Scripts/Buttons/)   
   [Controller Input](../Scripts/Controller%20Input/)  
@@ -31,6 +30,7 @@
   [Room Logic](../Scripts/Room%20Logic/)  
   [Spider Creation Interface](../Scripts/Spider%20Creation%20Interface/)  
   [Spiders](../Scripts/Spiders/)  
+    Unity Version Control: [Plastic SCM](https://www.plasticscm.com/orgs/ense_400_477_capstone/repos/ENSE-477-Capstone/changesets)  
 - [X] [Code testing plan](./Code_Testing_Plan.pdf)
 - [X] [Code testing results](./Code_Test_Results.pdf)
 - [X] [User testing plan](./User_Testing_Plan.pdf)
@@ -42,7 +42,7 @@
   [Vlog #5](https://youtu.be/l-9Ft43D0aw)
 - [X] [Project commercial](https://youtu.be/1JCVEE52tXU)
 - [X] Customer help / user training / knowledgebase (In game tutorial)
-- [X] Final presentation and demo (April 9)
+- [X] [Final presentation and demo (April 9)](./Final_Presentation.pptx)
 - [ ] Project experience report
 
 ## Additional Documentation
