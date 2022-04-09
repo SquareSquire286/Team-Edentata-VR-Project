@@ -43,7 +43,7 @@
 - [X] [Project commercial](https://youtu.be/1JCVEE52tXU)
 - [X] Customer help / user training / knowledgebase (In game tutorial)
 - [X] [Final presentation and demo (April 9)](./Final_Presentation.pptx)
-- [ ] Project experience report
+- [X] [Project experience report](./Project_Experience_Report.pdf)
 
 ## Additional Documentation
 ### Scrum Notes
