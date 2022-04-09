@@ -18,7 +18,12 @@ _Note: Version control through Unity was done using PlasticSCM therefore all reg
 
 
 # Instructions
-< insert instructions here >
+1. Download the [ArachoTherapy VR apk]([ArachnotherapyVR.apk](https://drive.google.com/file/d/1GFgkF8Gt_JzKvsgLMEm-2ZSz-r8aR9B5/view?usp=sharing)file
+2. Load the apk to your headset using [SideQuest](https://sidequestvr.com)
+3. Launch the app from the 'Unknown Sources' library
+
+[Here](https://learn.adafruit.com/sideloading-on-oculus-quest/install-and-use-sidequest) is an additional step-by-step instruction for sideloading. 
+
 
 # Special Thanks
 
